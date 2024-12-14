@@ -1,0 +1,16 @@
+{
+  "name": "My Dev Environment",
+  "image": "node:16", // 必要なベースイメージ
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {} // 必要なら追加
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint", // 必要な拡張機能を記載
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install" // コンテナ起動後に実行されるコマンド
+}
