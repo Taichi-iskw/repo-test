@@ -1,6 +1,6 @@
 {
   "name": "My Dev Environment",
-  "image": "node:16", // 必要なベースイメージ
+  "image": "ubuntu", // 必要なベースイメージ
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {} // 必要なら追加
   },
